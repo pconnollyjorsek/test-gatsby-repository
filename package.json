@@ -8,7 +8,7 @@
   "scripts": {
     "build": "Echo \"Done\"",
     "bundle": "rm -rf .cache public && gatsby build",
-    "docker:build": "mkdir -p ./static && cp -r ./ezd_content/assets/* ./static && gatsby build",
+    "docker:build": "./build_gatsby.sh",
     "develop": "rm -rf .cache public && gatsby develop",
     "start": "npm run develop",
     "serve": "gatsby serve"
