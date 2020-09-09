@@ -1,0 +1,95 @@
+/*
+    -- DO NOT TOUCH --
+    Actual component styles go in the .tsx files, this is just for global styles.
+    Class names will not stay the same.
+*/
+
+* {
+    font-family: 'Roboto', 'Lato', Helvetica, sans-serif;
+}
+
+h1 a {
+    font-size: large;
+}
+
+h1 > span.ph {
+    font-size: 1em;
+    line-height: 1em;
+}
+
+h1.topictitle1 {
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    margin-top: 0px;
+    font-size: 3em;
+    line-height: 1.2em;
+    width: "100%";
+    border-bottom: 1px solid lightgrey;
+    font-weight: 300;
+}
+
+#__next{
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    /* overflow-x: hidden; */
+}
+
+.rct-title {
+    padding: 0 !important;
+}
+
+.react-checkbox-tree label {
+    display: flex;
+    align-items: center;
+}
+
+.rct-checkbox {
+    display: flex;
+}
+
+.rct-collapse, .rct-checkbox, .rct-node-icon {
+    padding: initial !important;
+    color: #ababab !important;
+}
+
+.rct-node {
+    padding: 5px 0px;
+}
+
+.note {
+    font-style: italic;
+    color: #6E6E6E;
+    background-color: #F4F4F4;
+    padding: 20px;
+    margin: 10px 0;
+}
+
+.note_warning {
+    color: #B90503;
+    font-style: normal;
+    background-color: #F6DCDC;
+}
+
+.note_danger {
+    color: #B90503;
+    font-style: normal;
+    background-color: #F6DCDC;
+}
+
+.note_caution {
+    color: #B98803;
+    font-style: normal;
+    background-color: #F6EFDC;
+}
+
+.note_important {
+    color: #0381B9;
+    font-style: normal;
+    background-color: #DCEEF6;
+}
+
+.abstract {
+    font-style: italic;
+    color: #989898;
+}
