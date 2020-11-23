@@ -11,6 +11,7 @@ import MenuIcon from "@material-ui/icons/Menu";
 import SearchIcon from "@material-ui/icons/Search";
 import CloseIcon from "@material-ui/icons/Close";
 import Footer from "@jorsek/gatsby-theme-easydita-jsk/src/components/Footer";
+import { Helmet } from "react-helmet";
 
 const withStyles = makeStyles((theme: Theme) => ({
     content: {
@@ -161,6 +162,17 @@ const Layout: React.FunctionComponent = (props) => {
     const classes = withStyles(props);
     return (
         <div className={classes.content}>
+            <Helmet>
+                <meta
+                    name="viewport"
+                    content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no"
+                />
+                <link
+                    href={"https://fonts.googleapis.com/css?family=Lato:400,700|Open+Sans:400,600&display=swap"}
+                    rel="stylesheet"
+                ></link>
+                <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+            </Helmet>
             <AppBar color="inherit" position="fixed" className={classes.header}>
                 <Toolbar className={classes.toolbar}>
                     {isSmall ? (
@@ -247,8 +259,8 @@ const Layout: React.FunctionComponent = (props) => {
                         <SearchBox />
                     </div>
                 )}
+                <div data-netlify-identity-button>Login with Netlify Identity</div>
             </AppBar>
-            <div data-netlify-identity-button>Login with Netlify Identity</div>
             {props.children}
             <div style={{ flexGrow: 1 }} />
             <Footer />
